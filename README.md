@@ -1,98 +1,98 @@
-# Apartmány Šumava - Next.js Web
+# Šumava Apartments - Next.js Website
 
-Moderní web pro dva apartmány na Šumavě (Prášily a Železná Ruda) vytvořený v Next.js s možností statického exportu.
+Modern website for two apartments in Šumava (Prášily and Železná Ruda) built with Next.js and configured for static export.
 
-## 🚀 Technologie
+## 🚀 Technologies
 
 - **Next.js 16** (App Router)
 - **TypeScript**
 - **Tailwind CSS v4**
-- **Framer Motion** (animace)
-- **Statický export** (připraveno pro klasický hosting)
+- **Framer Motion** (animations)
+- **Static export** (ready for standard hosting)
 
-## 📁 Struktura projektu
+## 📁 Project Structure
 
 ```
 apartmany-sumava/
-├── app/                          # Next.js stránky
-│   ├── apartman/[slug]/         # Detail apartmánu (dynamická stránka)
-│   ├── galerie/                 # Galerie s filtrem
-│   ├── cenik/                   # Ceník
-│   ├── kontakt/                 # Kontakt a FAQ
-│   ├── okoli/                   # Tipy na výlety
-│   ├── rezervace/               # Rezervační stránka
+├── app/                          # Next.js pages
+│   ├── apartman/[slug]/         # Apartment detail (dynamic page)
+│   ├── galerie/                 # Gallery with filter
+│   ├── cenik/                   # Pricing
+│   ├── kontakt/                 # Contact & FAQ
+│   ├── okoli/                   # Trip suggestions
+│   ├── rezervace/               # Booking page
 │   ├── layout.tsx               # Root layout
 │   ├── page.tsx                 # Homepage
-│   └── globals.css              # Globální styly
-├── components/                   # React komponenty
-│   ├── Navbar.tsx               # Navigace
-│   ├── Hero.tsx                 # Hero sekce
-│   ├── ApartmentCard.tsx        # Karta apartmánu
-│   ├── SectionHeading.tsx       # Nadpisy sekcí
+│   └── globals.css              # Global styles
+├── components/                   # React components
+│   ├── Navbar.tsx               # Navigation
+│   ├── Hero.tsx                 # Hero section
+│   ├── ApartmentCard.tsx        # Apartment card
+│   ├── SectionHeading.tsx       # Section headings
 │   └── Footer.tsx               # Footer
-├── content/                      # Datový model
-│   ├── apartments.ts            # Data apartmánů
-│   ├── site.ts                  # Globální data
-│   └── trips.ts                 # Tipy na výlety
-├── public/images/               # Obrázky
-│   ├── prasily/                 # Obrázky Prášily
-│   ├── zelezna-ruda/            # Obrázky Železná Ruda
-│   └── shared/                  # Sdílené obrázky
-└── out/                         # Statický export (po buildu)
+├── content/                      # Data model
+│   ├── apartments.ts            # Apartment data
+│   ├── site.ts                  # Global site data
+│   └── trips.ts                 # Trip suggestions
+├── public/images/               # Images
+│   ├── prasily/                 # Prášily images
+│   ├── zelezna-ruda/            # Železná Ruda images
+│   └── shared/                  # Shared images
+└── out/                         # Static export (after build)
 ```
 
 ## 🎨 Design System
 
-### Barevná paleta
-- **Forest Dark**: `#1a3a2e` - Tmavě zelená
-- **Charcoal**: `#2c3531` - Uhlová
-- **Cream**: `#f4f1ea` - Krémová
-- **Copper**: `#b87333` - Měděná (akcent)
-- **Mist**: `#e0e5e3` - Mlhavá
+### Color Palette
+- **Forest Dark**: `#1a3a2e` - Dark green
+- **Charcoal**: `#2c3531` - Charcoal
+- **Cream**: `#f4f1ea` - Cream
+- **Copper**: `#b87333` - Copper (accent)
+- **Mist**: `#e0e5e3` - Mist
 
-### Typografie
-- **Serif**: Playfair Display (nadpisy)
-- **Sans**: Inter (text)
+### Typography
+- **Serif**: Playfair Display (headings)
+- **Sans**: Inter (body text)
 
-## 🛠️ Instalace a spuštění
+## 🛠️ Installation & Development
 
-### Lokální vývoj
+### Local Development
 
 ```bash
-# Instalace závislostí
+# Install dependencies
 npm install
 
-# Spuštění dev serveru
+# Run dev server
 npm run dev
 ```
 
-Web bude dostupný na `http://localhost:3000`
+Website will be available at `http://localhost:3000`
 
-### Build a export
+### Build & Export
 
 ```bash
-# Build projektu
+# Build project
 npm run build
 ```
 
-Po buildu se vytvoří složka `out/` s kompletním statickým webem.
+After build, the `out/` folder will contain the complete static website.
 
-## 📤 Nasazení na hosting
+## 📤 Deployment to Hosting
 
-### Krok 1: Build
+### Step 1: Build
 ```bash
 npm run build
 ```
 
-### Krok 2: Nahrání na hosting
-1. Otevřete FTP klienta (FileZilla, WinSCP, atd.)
-2. Připojte se k vašemu hostingu
-3. Přejděte do složky `public_html/`
-4. Nahrajte **celý obsah** složky `out/` do `public_html/`
+### Step 2: Upload to hosting
+1. Open your FTP client (FileZilla, WinSCP, etc.)
+2. Connect to your hosting
+3. Navigate to `public_html/`
+4. Upload **entire contents** of `out/` folder to `public_html/`
 
-**Důležité**: Nahrajte pouze OBSAH složky `out/`, ne samotnou složku!
+**Important**: Upload only CONTENTS of `out/` folder, not the folder itself!
 
-### Struktura na hostingu
+### Hosting Structure
 ```
 public_html/
 ├── index.html
@@ -108,29 +108,29 @@ public_html/
 └── images/
 ```
 
-## 📸 Jak přidat vlastní fotky
+## 📸 How to Add Your Own Photos
 
-### 1. Příprava fotek
-- Doporučená velikost: min. 1920x1080px
-- Formát: JPG (optimalizováno pro web)
-- Pojmenování: číselné (01.jpg, 02.jpg, atd.)
+### 1. Prepare Photos
+- Recommended size: min. 1920x1080px
+- Format: JPG (optimized for web)
+- Naming: numerical (01.jpg, 02.jpg, etc.)
 
-### 2. Umístění fotek
+### 2. Photo Locations
 
-#### Hero obrázky
+#### Hero Images
 ```
 public/images/prasily/hero.jpg
 public/images/zelezna-ruda/hero.jpg
 public/images/shared/hero-homepage.jpg
 ```
 
-#### Galerie apartmánů
+#### Apartment Galleries
 ```
-public/images/prasily/gallery/01.jpg až 10.jpg
-public/images/zelezna-ruda/gallery/01.jpg až 10.jpg
+public/images/prasily/gallery/01.jpg to 10.jpg
+public/images/zelezna-ruda/gallery/01.jpg to 10.jpg
 ```
 
-#### Tipy na výlety
+#### Trip Suggestions
 ```
 public/images/shared/certovo-jezero.jpg
 public/images/shared/spicak.jpg
@@ -140,16 +140,16 @@ public/images/shared/pancirska.jpg
 public/images/shared/modrava.jpg
 ```
 
-### 3. Po přidání fotek
+### 3. After Adding Photos
 ```bash
 npm run build
 ```
-Pak nahrajte nový obsah `out/` na hosting.
+Then upload new `out/` contents to hosting.
 
-## ✏️ Jak upravit obsah
+## ✏️ How to Edit Content
 
-### Kontaktní údaje
-Upravte soubor `content/site.ts`:
+### Contact Information
+Edit `content/site.ts`:
 ```typescript
 contact: {
   phone: '+420123456789',
@@ -158,56 +158,52 @@ contact: {
 }
 ```
 
-### Ceny apartmánů
-Upravte soubor `content/apartments.ts`:
+### Apartment Prices
+Edit `content/apartments.ts`:
 ```typescript
 pricing: [
   {
-    season: 'Hlavní sezóna (léto, zima)',
-    pricePerNight: 'od 1 800 Kč',
+    season: 'High Season (summer, winter)',
+    pricePerNight: 'from 1,800 CZK',
     minNights: 2,
   },
 ]
 ```
 
-### Vybavení apartmánů
-Upravte pole `features` v `content/apartments.ts`:
+### Apartment Features
+Edit `features` array in `content/apartments.ts`:
 ```typescript
 features: [
-  { icon: '🏠', label: 'Celý apartmán' },
-  { icon: '🅿️', label: 'Parkování zdarma' },
+  { icon: '🏠', label: 'Entire apartment' },
+  { icon: '🅿️', label: 'Free parking' },
   // ...
 ]
 ```
 
-### Tipy na výlety
-Upravte soubor `content/trips.ts`
+### Trip Suggestions
+Edit `content/trips.ts`
 
-Po každé úpravě obsahu:
+After any content change:
 ```bash
 npm run build
 ```
 
-## 🔧 Technické poznámky
+## 🔧 Technical Notes
 
-### Statický export
-Web je nakonfigurován pro statický export (`output: 'export'` v `next.config.ts`). To znamená:
-- Žádný server-side rendering
-- Všechny stránky jsou pre-renderované jako HTML
-- Funguje na jakémkoliv hostingu (nemusí podporovat Node.js)
+### Static Export
+Website is configured for static export (`output: 'export'` in `next.config.ts`). This means:
+- No server-side rendering
+- All pages are pre-rendered as HTML
+- Works on any hosting (doesn't need Node.js support)
 
-### Obrázky
-Next.js Image komponenta je nastavena na `unoptimized: true` pro statický export. Doporučuji optimalizovat obrázky před nahráním (např. pomocí TinyPNG).
+### Images
+Next.js Image component is set to `unoptimized: true` for static export. Recommended to optimize images before upload (e.g., using TinyPNG).
 
 ### SEO
-- Každá stránka má vlastní metadata (title, description)
-- Open Graph tagy pro sdílení na sociálních sítích
-- Semantic HTML pro lepší přístupnost
+- Each page has its own metadata (title, description)
+- Open Graph tags for social media sharing
+- Semantic HTML for better accessibility
 
-## 📞 Podpora
+## 📝 License
 
-Pro dotazy nebo problémy kontaktujte vývojáře.
-
-## 📝 Licence
-
-© 2026 Apartmány Šumava. Všechna práva vyhrazena.
+© 2026 Apartmány Šumava. All rights reserved.
