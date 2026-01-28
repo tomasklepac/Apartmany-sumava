@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+
+export const dynamic = 'force-static';
 import { apartments } from '@/content/apartments';
 
 export default function sitemap(): MetadataRoute.Sitemap {
