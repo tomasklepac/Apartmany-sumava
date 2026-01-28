@@ -79,23 +79,6 @@ export default function OkoliPage() {
                         </div>
                     ))}
                 </div>
-
-                {/* CTA */}
-                <div className="mt-16 bg-forest-dark text-cream p-12 rounded-2xl text-center">
-                    <h3 className="text-3xl font-serif font-bold mb-4">
-                        Naplánujte si dovolenou na Šumavě
-                    </h3>
-                    <p className="text-cream/80 text-lg mb-8 max-w-2xl mx-auto">
-                        Naše apartmány jsou ideálním výchozím bodem pro objevování Šumavy.
-                        Rezervujte si pobyt a užijte si vše, co tento region nabízí.
-                    </p>
-                    <a
-                        href="/rezervace"
-                        className="inline-block px-8 py-4 bg-copper text-cream rounded-full font-medium text-lg hover:bg-copper-light transition-all hover:scale-105"
-                    >
-                        Rezervovat apartmán
-                    </a>
-                </div>
             </div>
         </div>
     );

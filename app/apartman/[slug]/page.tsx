@@ -178,12 +178,6 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                                     >
                                         ✉️ Napsat
                                     </Link>
-                                    <Link
-                                        href="/rezervace"
-                                        className="block w-full text-center px-6 py-3 bg-cream text-forest-dark rounded-full font-medium hover:bg-cream-dark transition-all"
-                                    >
-                                        Rezervovat
-                                    </Link>
                                 </div>
                             </div>
 

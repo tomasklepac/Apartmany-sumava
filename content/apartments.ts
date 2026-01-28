@@ -46,7 +46,7 @@ export const apartments: Apartment[] = [
         title: 'Apartmán Prášily 1',
         location: 'Prášily',
         shortDescription: 'Útulný apartmán v srdci Šumavy pro 3 osoby.',
-        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry nebo malou rodinu.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry nebo malou rodinu.',
         capacity: '3 osoby',
         heroImage: '/images/prasily/prasily-ap-postel.jpeg',
         features: [
@@ -55,8 +55,6 @@ export const apartments: Apartment[] = [
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Kuchyňský kout' },
             { icon: '📺', label: 'TV' },
-            { icon: '🐕', label: 'Domácí mazlíčci povoleni' },
-            { icon: '⛷️', label: 'Blízko lyžařských areálů' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
@@ -117,7 +115,7 @@ export const apartments: Apartment[] = [
         title: 'Apartmán Prášily 2',
         location: 'Prášily',
         shortDescription: 'Prostorný apartmán v srdci Šumavy pro 4 osoby.',
-        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro rodiny s dětmi.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. Ideální pro rodiny s dětmi.',
         capacity: '4 osoby',
         heroImage: '/images/prasily/prasily-ap2-cley-pokoj.webp',
         features: [
@@ -126,8 +124,6 @@ export const apartments: Apartment[] = [
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Kuchyňský kout' },
             { icon: '📺', label: 'TV' },
-            { icon: '🐕', label: 'Domácí mazlíčci povoleni' },
-            { icon: '⛷️', label: 'Blízko lyžařských areálů' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
