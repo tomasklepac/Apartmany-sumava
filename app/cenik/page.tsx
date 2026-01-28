@@ -66,8 +66,8 @@ export default function CenikPage() {
                     <h3 className="text-2xl font-serif font-bold text-charcoal mb-4">Důležité informace</h3>
                     <ul className="space-y-2 text-charcoal/80">
                         <li>✓ Ceny jsou uvedeny za noc</li>
-                        <li>✓ Check-in: 14:00 - 18:00</li>
-                        <li>✓ Check-out: do 10:00</li>
+                        <li>✓ Check-in: od 15:00</li>
+                        <li>✓ Check-out: do 11:00</li>
                         <li>✓ Možnost pozdního check-in po domluvě</li>
                         <li>✓ Platba v hotovosti nebo převodem</li>
                     </ul>
