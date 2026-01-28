@@ -51,6 +51,7 @@ export default function Hero({
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-cream mb-6"
+                    style={{ textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6)' }}
                 >
                     {title}
                 </motion.h1>
@@ -60,6 +61,7 @@ export default function Hero({
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-lg sm:text-xl md:text-2xl text-cream/90 mb-12 max-w-2xl mx-auto"
+                    style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6)' }}
                 >
                     {subtitle}
                 </motion.p>
