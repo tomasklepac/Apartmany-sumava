@@ -70,8 +70,8 @@ export const apartments: Apartment[] = [
             '/images/prasily/prasily-budova.jpeg',
         ],
         coordinates: {
-            lat: 49.0733,
-            lng: 13.3978,
+            lat: 49.10387698031286,
+            lng: 13.378682904281245,
         },
     },
     {
@@ -112,8 +112,8 @@ export const apartments: Apartment[] = [
             '/images/prasily/prasily-dvere.jpeg',
         ],
         coordinates: {
-            lat: 49.0733,
-            lng: 13.3978,
+            lat: 49.10387698031286,
+            lng: 13.378682904281245,
         },
     },
     {
