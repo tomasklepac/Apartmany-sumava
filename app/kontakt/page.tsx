@@ -27,7 +27,7 @@ export default function KontaktPage() {
                                 <div>
                                     <div className="flex items-center space-x-3 mb-2">
                                         <span className="text-3xl text-copper font-serif font-bold">Telefon</span>
-                                        <h4 className="text-lg font-semibold text-charcoal">Telefon</h4>
+
                                     </div>
                                     <a
                                         href={`tel:${siteData.contact.phone}`}
@@ -40,7 +40,7 @@ export default function KontaktPage() {
                                 <div>
                                     <div className="flex items-center space-x-3 mb-2">
                                         <span className="text-3xl text-copper font-serif font-bold">Email</span>
-                                        <h4 className="text-lg font-semibold text-charcoal">Email</h4>
+
                                     </div>
                                     <a
                                         href={`mailto:${siteData.contact.email}`}
