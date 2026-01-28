@@ -33,7 +33,7 @@ export default function HomePage() {
       <Hero
         title={siteData.tagline}
         subtitle="Klid, příroda a komfort pro vaši dovolenou v srdci Šumavy"
-        backgroundImage="/images/shared/hero-homepage.jpg"
+        backgroundImage="/images/shared/hero-homepage.png"
         primaryCTA={{
           label: 'Vybrat apartmán',
           href: '#apartmany',
