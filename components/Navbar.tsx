@@ -3,9 +3,8 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { AnimatePresence } from 'framer-motion';
-
-// ... (zbytek importů zůstává stejný, jen přidána AnimatePresence)
+import { motion, AnimatePresence } from 'framer-motion';
+import { siteData } from '@/content/site';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
