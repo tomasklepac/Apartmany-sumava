@@ -63,6 +63,11 @@ export const apartments: Apartment[] = [
             '/images/prasily/prasily-ap-vstup.jpeg',
             '/images/prasily/prasily-ap-botnik.jpeg',
             '/images/prasily/prasily-budova.jpeg',
+            '/images/prasily/prasily-bezkarska-stopa.jpeg',
+            '/images/prasily/prasily-bezkarska-stopa-2.jpeg',
+            '/images/prasily/prasily-jezirko.jpeg',
+            '/images/prasily/prasily-kun.jpeg',
+            '/images/prasily/prasily-polednik.jpeg',
         ],
         coordinates: {
             lat: 49.10387698031286,
@@ -100,6 +105,11 @@ export const apartments: Apartment[] = [
             '/images/prasily/prasily-budova.jpeg',
             '/images/prasily/prasily-schodiste.jpeg',
             '/images/prasily/prasily-dvere.jpeg',
+            '/images/prasily/prasily-bezkarska-stopa.jpeg',
+            '/images/prasily/prasily-bezkarska-stopa-2.jpeg',
+            '/images/prasily/prasily-jezirko.jpeg',
+            '/images/prasily/prasily-kun.jpeg',
+            '/images/prasily/prasily-polednik.jpeg',
         ],
         coordinates: {
             lat: 49.10387698031286,
