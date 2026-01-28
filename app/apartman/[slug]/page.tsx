@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { apartments, getApartmentById } from '@/content/apartments';
 import Hero from '@/components/Hero';
+import ApartmentMap from '@/components/ApartmentMap';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -134,24 +135,23 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                             </div>
                         </div>
 
-                        {/* Nearby Highlights */}
+                        {/* Location & Map */}
                         <div>
-                            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">V okolí</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {apartment.nearbyHighlights.map((highlight, index) => (
-                                    <div key={index} className="p-6 bg-cream-dark rounded-lg">
-                                        <div className="flex items-start space-x-4">
-                                            <span className="text-3xl">{highlight.icon}</span>
-                                            <div>
-                                                <h3 className="text-lg font-semibold text-charcoal mb-1">
-                                                    {highlight.title}
-                                                </h3>
-                                                <p className="text-charcoal/70 text-sm mb-2">{highlight.description}</p>
-                                                <p className="text-copper text-sm font-medium">{highlight.distance}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
+                            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Poloha</h2>
+                            <div className="mb-4">
+                                <p className="text-charcoal/70 mb-2">
+                                    <span className="font-semibold">Adresa:</span> {apartment.address}
+                                </p>
+                            </div>
+                            <ApartmentMap address={apartment.address} coordinates={apartment.coordinates} />
+
+                            <div className="mt-6 text-center">
+                                <Link
+                                    href="/okoli"
+                                    className="inline-block px-8 py-3 bg-forest-dark text-cream rounded-full font-medium hover:bg-forest transition-all hover:scale-105"
+                                >
+                                    🏞️ Objevte okolí
+                                </Link>
                             </div>
                         </div>
                     </div>

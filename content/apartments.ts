@@ -10,17 +10,11 @@ export interface PricingSeason {
     minNights?: number;
 }
 
-export interface NearbyHighlight {
-    title: string;
-    description: string;
-    distance: string;
-    icon: string;
-}
-
 export interface Apartment {
     id: 'prasily' | 'prasily-2' | 'zelezna-ruda';
     title: string;
     location: string;
+    address: string;
     shortDescription: string;
     longDescription: string;
     capacity: string;
@@ -32,11 +26,6 @@ export interface Apartment {
         lat: number;
         lng: number;
     };
-    nearbyHighlights: NearbyHighlight[];
-    bookingLinks?: {
-        booking?: string;
-        airbnb?: string;
-    };
 }
 
 // Data apartmánů
@@ -45,6 +34,7 @@ export const apartments: Apartment[] = [
         id: 'prasily',
         title: 'Apartmán Prášily 1',
         location: 'Prášily',
+        address: 'Prášily 172, 342 01 Prášily',
         shortDescription: 'Útulný apartmán v srdci Šumavy pro 3 osoby.',
         longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry nebo malou rodinu.',
         capacity: '3 osoby',
@@ -83,37 +73,12 @@ export const apartments: Apartment[] = [
             lat: 49.0733,
             lng: 13.3978,
         },
-        nearbyHighlights: [
-            {
-                title: 'Lyžařský areál Špičák',
-                description: 'Moderní lyžařský areál s kvalitním zázemím',
-                distance: '8 km',
-                icon: '⛷️',
-            },
-            {
-                title: 'Čertovo jezero',
-                description: 'Malebné ledovcové jezero v srdci Šumavy',
-                distance: '12 km',
-                icon: '🏞️',
-            },
-            {
-                title: 'Schwarzenberský plavební kanál',
-                description: 'Historická technická památka',
-                distance: '5 km',
-                icon: '🚣',
-            },
-            {
-                title: 'Modrava',
-                description: 'Nejzápadnější obec Česka s unikátní přírodou',
-                distance: '15 km',
-                icon: '🌲',
-            },
-        ],
     },
     {
         id: 'prasily-2',
         title: 'Apartmán Prášily 2',
         location: 'Prášily',
+        address: 'Prášily 172, 342 01 Prášily',
         shortDescription: 'Prostorný apartmán v srdci Šumavy pro 4 osoby.',
         longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. Ideální pro rodiny s dětmi.',
         capacity: '4 osoby',
@@ -150,37 +115,12 @@ export const apartments: Apartment[] = [
             lat: 49.0733,
             lng: 13.3978,
         },
-        nearbyHighlights: [
-            {
-                title: 'Lyžařský areál Špičák',
-                description: 'Moderní lyžařský areál s kvalitním zázemím',
-                distance: '8 km',
-                icon: '⛷️',
-            },
-            {
-                title: 'Čertovo jezero',
-                description: 'Malebné ledovcové jezero v srdci Šumavy',
-                distance: '12 km',
-                icon: '🏞️',
-            },
-            {
-                title: 'Schwarzenberský plavební kanál',
-                description: 'Historická technická památka',
-                distance: '5 km',
-                icon: '🚣',
-            },
-            {
-                title: 'Modrava',
-                description: 'Nejzápadnější obec Česka s unikátní přírodou',
-                distance: '15 km',
-                icon: '🌲',
-            },
-        ],
     },
     {
         id: 'zelezna-ruda',
         title: 'Apartmán Železná Ruda',
         location: 'Železná Ruda',
+        address: 'Javorská 1, 340 04 Železná Ruda',
         shortDescription: 'Prostorný apartmán v centru horského městečka s výbornou dostupností.',
         longDescription: 'Nově zrekonstruovaný apartmán v centru Železné Rudy nabízí komfortní ubytování s moderním vybavením. Nachází se v těsné blízkosti lyžařských areálů Špičák a Belveder. Apartmán disponuje dvěma ložnicemi, prostornou obývací částí s kuchyňským koutem a moderní koupelnou. Ideální výchozí bod pro turistiku i lyžování.',
         capacity: '4 osoby',
@@ -223,32 +163,6 @@ export const apartments: Apartment[] = [
             lat: 49.1367,
             lng: 13.2353,
         },
-        nearbyHighlights: [
-            {
-                title: 'Lyžařský areál Špičák',
-                description: 'Největší lyžařský areál v oblasti',
-                distance: '3 km',
-                icon: '⛷️',
-            },
-            {
-                title: 'Pancířská jezírka',
-                description: 'Skupina ledovcových jezer',
-                distance: '10 km',
-                icon: '🏞️',
-            },
-            {
-                title: 'Belveder',
-                description: 'Rozhledna s úžasným výhledem',
-                distance: '5 km',
-                icon: '🗼',
-            },
-            {
-                title: 'Šumavská magistrála',
-                description: 'Nejdelší česká turistická trasa',
-                distance: '0 km',
-                icon: '🥾',
-            },
-        ],
     },
 ];
 
