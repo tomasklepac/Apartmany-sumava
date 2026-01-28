@@ -1,5 +1,12 @@
+import dynamic from 'next/dynamic';
 import { siteData } from '@/content/site';
+import { apartments } from '@/content/apartments';
 import SectionHeading from '@/components/SectionHeading';
+
+const ContactMap = dynamic(() => import('@/components/ContactMap'), {
+    ssr: false,
+    loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse rounded-xl" />
+});
 
 export const metadata = {
     title: 'Kontakt',
@@ -7,6 +14,15 @@ export const metadata = {
 };
 
 export default function KontaktPage() {
+    // Příprava dat pro mapu
+    const locations = apartments.map(apt => ({
+        id: apt.id,
+        title: apt.title,
+        description: apt.shortDescription,
+        coordinates: apt.coordinates,
+        address: apt.address || apt.location // Fallback
+    }));
+
     return (
         <div className="pt-24 pb-16 bg-cream">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,15 +31,15 @@ export default function KontaktPage() {
                     subtitle="Rádi zodpovíme vaše dotazy a pomůžeme s rezervací"
                 />
 
-                <div className="max-w-2xl mx-auto">
-                    {/* Contact Info */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    {/* Levý sloupec: Kontakty */}
                     <div className="space-y-8">
-                        <div className="bg-cream-dark p-10 rounded-2xl shadow-lg text-center">
+                        <div className="bg-cream-dark p-10 rounded-2xl shadow-lg">
                             <h3 className="text-2xl font-bold text-charcoal mb-8">
                                 Kontaktní údaje
                             </h3>
 
-                            <div className="flex flex-col gap-4 items-center">
+                            <div className="flex flex-col gap-4 items-start">
                                 <a
                                     href={`tel:${siteData.contact.phone}`}
                                     className="inline-flex items-center space-x-4 px-8 py-4 bg-forest-dark text-cream rounded-full hover:bg-forest-medium transition-all shadow-md group w-fit"
@@ -53,21 +69,10 @@ export default function KontaktPage() {
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Mapa */}
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-                    <div className="bg-cream-dark p-4 rounded-2xl shadow-lg overflow-hidden h-[400px]">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d83088.78440748464!2d13.230778!3d49.122147!3m2!1i1024!2i768!4f13.1!2m1!1zapartmÃ¡ny Å¡umava prÃ¡Å¡ily Å¾eleznÃ¡ ruda!5e0!3m2!1scs!2scz!4v1706456789012!5m2!1scs!2scz"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            className="rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
-                        ></iframe>
+                    {/* Pravý sloupec: Mapa */}
+                    <div className="h-full min-h-[500px]">
+                        <ContactMap locations={locations} />
                     </div>
                 </div>
             </div>
