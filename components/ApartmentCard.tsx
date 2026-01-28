@@ -29,10 +29,7 @@ export default function ApartmentCard({ apartment, index = 0 }: ApartmentCardPro
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
 
-                {/* Location Badge */}
-                <div className="absolute top-4 right-4 bg-cream/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                    <span className="text-sm font-medium text-charcoal">📍 {apartment.location}</span>
-                </div>
+
             </div>
 
             {/* Content */}
