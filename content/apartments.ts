@@ -45,6 +45,7 @@ export const apartments: Apartment[] = [
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Kuchyňský kout' },
             { icon: '📺', label: 'TV' },
+            { icon: '☀️', label: 'Terasa' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
@@ -87,7 +88,6 @@ export const apartments: Apartment[] = [
             { icon: '🅿️', label: 'Parkování zdarma' },
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Kuchyňský kout' },
-            { icon: '📺', label: 'TV' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
