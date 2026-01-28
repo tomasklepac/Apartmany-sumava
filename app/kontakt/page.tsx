@@ -44,7 +44,30 @@ export default function KontaktPage() {
                                     <span className="font-medium text-lg">{siteData.contact.email}</span>
                                 </a>
                             </div>
+
+                            {/* Fakturační údaje */}
+                            <div className="mt-12 pt-8 border-t border-charcoal/10">
+                                <h4 className="text-lg font-bold text-charcoal mb-4">Provozovatel</h4>
+                                <p className="text-charcoal/80 text-lg">Mgr. Milan Klepač</p>
+                                <p className="text-charcoal/60 mt-1">IČO: 88209431</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* Mapa */}
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+                    <div className="bg-cream-dark p-4 rounded-2xl shadow-lg overflow-hidden h-[400px]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d83088.78440748464!2d13.230778!3d49.122147!3m2!1i1024!2i768!4f13.1!2m1!1zapartmÃ¡ny Å¡umava prÃ¡Å¡ily Å¾eleznÃ¡ ruda!5e0!3m2!1scs!2scz!4v1706456789012!5m2!1scs!2scz"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+                        ></iframe>
                     </div>
                 </div>
             </div>
