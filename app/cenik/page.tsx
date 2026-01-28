@@ -68,7 +68,6 @@ export default function CenikPage() {
                         <li>✓ Ceny jsou uvedeny za noc</li>
                         <li>✓ Check-in: od 15:00</li>
                         <li>✓ Check-out: do 11:00</li>
-                        <li>✓ Možnost pozdního check-in po domluvě</li>
                         <li>✓ Platba v hotovosti nebo převodem</li>
                     </ul>
 
