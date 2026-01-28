@@ -93,7 +93,7 @@ export default function Footer() {
                 {/* Bottom */}
                 <div className="mt-12 pt-8 border-t border-cream/20 text-center text-cream/60 text-sm">
                     <p>&copy; {currentYear} {siteData.name}. Všechna práva vyhrazena.</p>
-                    <p className="mt-2">Vytvořil Tomáš Klepáč</p>
+                    <p className="mt-2">Vytvořil Tomáš Klepač</p>
                 </div>
             </div>
         </footer>
