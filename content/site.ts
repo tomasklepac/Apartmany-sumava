@@ -16,7 +16,7 @@ export interface SiteData {
 
 export const siteData: SiteData = {
     name: 'Apartmány Šumava',
-    tagline: 'Dva apartmány. Jedna Šumava.',
+    tagline: 'Tři apartmány. Jedna Šumava.',
     description: 'Ubytování v srdci Šumavy - Prášily a Železná Ruda. Klid, příroda a komfort pro vaši dovolenou.',
     contact: {
         phone: '+420777225546',
