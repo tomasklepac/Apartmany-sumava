@@ -16,6 +16,12 @@ export default function CenikPage() {
                     subtitle="Přehled cen ubytování v našich apartmánech"
                 />
 
+                <div className="max-w-3xl mx-auto text-center mb-8">
+                    <div className="inline-block p-4 bg-mist/50 rounded-xl text-charcoal/80 italic border border-charcoal/5">
+                        ℹ️ Konečná cena se mění v závislosti na konkrétním termínu a počtu osob.
+                    </div>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {apartments.map((apartment) => (
                         <div key={apartment.id} className="bg-cream-dark rounded-2xl overflow-hidden shadow-lg flex flex-col">
@@ -41,9 +47,7 @@ export default function CenikPage() {
                                     </div>
                                 ))}
 
-                                <div className="p-3 bg-mist/50 rounded-lg text-xs text-charcoal/80 italic">
-                                    ℹ️ Konečná cena se mění v závislosti na konkrétním termínu a počtu osob.
-                                </div>
+
 
                                 <div className="pt-4">
                                     <p className="text-charcoal/70 text-sm mb-4">
