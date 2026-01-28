@@ -1,13 +1,32 @@
+'use client';
+
+import { useState } from 'react';
 import Hero from '@/components/Hero';
 import ApartmentCard from '@/components/ApartmentCard';
 import SectionHeading from '@/components/SectionHeading';
+import Lightbox from '@/components/Lightbox';
 import { apartments } from '@/content/apartments';
 import { siteData, whyUs } from '@/content/site';
 import { trips } from '@/content/trips';
 import Link from 'next/link';
 import Image from 'next/image';
+import { AnimatePresence } from 'framer-motion';
 
 export default function HomePage() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+
+  const openLightbox = (images: string[], index: number) => {
+    setGalleryImages(images);
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -75,16 +94,36 @@ export default function HomePage() {
           />
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-            {apartments.flatMap(apt => apt.gallery.slice(0, 3)).slice(0, 6).map((image, index) => (
-              <div key={index} className="relative h-64 rounded-lg overflow-hidden group">
-                <Image
-                  src={image}
-                  alt={`Galerie ${index + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-            ))}
+            {(() => {
+              const previewImages = apartments.flatMap(apt => apt.gallery.slice(0, 3)).slice(0, 6);
+              const allImages = apartments.flatMap(apt => apt.gallery);
+
+              return previewImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="relative h-64 rounded-lg overflow-hidden group cursor-pointer"
+                  onClick={() => openLightbox(allImages, allImages.indexOf(image))}
+                >
+                  <Image
+                    src={image}
+                    alt={`Galerie ${index + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  {/* Overlay hint */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <svg
+                      className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
+              ));
+            })()}
           </div>
 
           <div className="text-center">
@@ -142,6 +181,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightboxOpen && (
+          <Lightbox
+            images={galleryImages}
+            currentIndex={currentImageIndex}
+            onClose={closeLightbox}
+            onNavigate={setCurrentImageIndex}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }
