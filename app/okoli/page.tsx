@@ -1,21 +1,19 @@
+'use client';
+
 import { trips } from '@/content/trips';
 import SectionHeading from '@/components/SectionHeading';
+import TripsMap from '@/components/TripsMap';
 import Image from 'next/image';
 
-export const metadata = {
-    title: 'Okolí a tipy na výlety',
-    description: 'Objevte krásy Šumavy - tipy na výlety, turistiku, lyžování a další aktivity',
+const categories = {
+    nature: { label: 'Příroda', icon: '🏞️' },
+    hiking: { label: 'Turistika', icon: '🥾' },
+    skiing: { label: 'Lyžování', icon: '⛷️' },
+    cycling: { label: 'Cyklistika', icon: '🚴' },
+    culture: { label: 'Kultura', icon: '🏛️' },
 };
 
 export default function OkoliPage() {
-    const categories = {
-        nature: { label: 'Příroda', icon: '🏞️' },
-        hiking: { label: 'Turistika', icon: '🥾' },
-        skiing: { label: 'Lyžování', icon: '⛷️' },
-        cycling: { label: 'Cyklistika', icon: '🚴' },
-        culture: { label: 'Kultura', icon: '🏛️' },
-    };
-
     return (
         <div className="pt-24 pb-16 bg-cream">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,6 +28,17 @@ export default function OkoliPage() {
                         Šumava nabízí nespočet možností pro aktivní odpočinek i relaxaci v přírodě.
                         Od turistických tras přes lyžařské areály až po klidná jezera - každý si zde najde to své.
                     </p>
+                </div>
+
+                {/* Interactive Map */}
+                <div className="mb-16">
+                    <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 text-center">
+                        Mapa výletů
+                    </h2>
+                    <p className="text-center text-charcoal/70 mb-8 max-w-2xl mx-auto">
+                        Prohlédněte si interaktivní mapu s výlety v okolí. Kliknutím na značku zobrazíte detail výletu.
+                    </p>
+                    <TripsMap />
                 </div>
 
                 {/* Trips Grid */}
