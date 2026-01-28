@@ -152,7 +152,7 @@ export const apartments: Apartment[] = [
             '/images/zelezna-ruda/ruda-budova-reality.jpeg',
             '/images/zelezna-ruda/ruda-altan.jpeg',
         ],
-        address: 'Železná Ruda 406, 340 04 Železná Ruda',
+
         coordinates: {
             lat: 49.140417,
             lng: 13.230778,
