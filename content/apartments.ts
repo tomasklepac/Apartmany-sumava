@@ -18,7 +18,7 @@ export interface NearbyHighlight {
 }
 
 export interface Apartment {
-    id: 'prasily' | 'zelezna-ruda';
+    id: 'prasily' | 'prasily-2' | 'zelezna-ruda';
     title: string;
     location: string;
     shortDescription: string;
@@ -43,21 +43,21 @@ export interface Apartment {
 export const apartments: Apartment[] = [
     {
         id: 'prasily',
-        title: 'Apartmán Prášily',
+        title: 'Apartmán Prášily 1',
         location: 'Prášily',
-        shortDescription: 'Útulný apartmán v srdci Šumavy s výhledem na okolní lesy a hory.',
-        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry i rodiny s dětmi.',
-        capacity: '2–4 osoby',
-        heroImage: '/images/prasily/hero.jpg',
+        shortDescription: 'Útulný apartmán v srdci Šumavy pro 3 osoby.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry nebo malou rodinu.',
+        capacity: '3 osoby',
+        heroImage: '/images/prasily/prasily-ap-postel.jpeg',
         features: [
             { icon: '🏠', label: 'Celý apartmán' },
             { icon: '🅿️', label: 'Parkování zdarma' },
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Plně vybavená kuchyň' },
             { icon: '📺', label: 'TV' },
-            { icon: '🔥', label: 'Krb' },
             { icon: '🐕', label: 'Domácí mazlíčci povoleni' },
             { icon: '⛷️', label: 'Blízko lyžařských areálů' },
+            { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
             {
@@ -72,16 +72,83 @@ export const apartments: Apartment[] = [
             },
         ],
         gallery: [
-            '/images/prasily/gallery/01.jpg',
-            '/images/prasily/gallery/02.jpg',
-            '/images/prasily/gallery/03.jpg',
-            '/images/prasily/gallery/04.jpg',
-            '/images/prasily/gallery/05.jpg',
-            '/images/prasily/gallery/06.jpg',
-            '/images/prasily/gallery/07.jpg',
-            '/images/prasily/gallery/08.jpg',
-            '/images/prasily/gallery/09.jpg',
-            '/images/prasily/gallery/10.jpg',
+            '/images/prasily/prasily-ap-postel.jpeg',
+            '/images/prasily/prasily-ap-kuchyn.jpeg',
+            '/images/prasily/prasily-ap-tv.jpeg',
+            '/images/prasily/prasily-ap-koupelna.jpeg',
+            '/images/prasily/prasily-ap-stul.jpeg',
+            '/images/prasily/prasily-ap-vstup.jpeg',
+            '/images/prasily/prasily-ap-botnik.jpeg',
+            '/images/prasily/prasily-budova.jpeg',
+        ],
+        coordinates: {
+            lat: 49.0733,
+            lng: 13.3978,
+        },
+        nearbyHighlights: [
+            {
+                title: 'Lyžařský areál Špičák',
+                description: 'Moderní lyžařský areál s kvalitním zázemím',
+                distance: '8 km',
+                icon: '⛷️',
+            },
+            {
+                title: 'Čertovo jezero',
+                description: 'Malebné ledovcové jezero v srdci Šumavy',
+                distance: '12 km',
+                icon: '🏞️',
+            },
+            {
+                title: 'Schwarzenberský plavební kanál',
+                description: 'Historická technická památka',
+                distance: '5 km',
+                icon: '🚣',
+            },
+            {
+                title: 'Modrava',
+                description: 'Nejzápadnější obec Česka s unikátní přírodou',
+                distance: '15 km',
+                icon: '🌲',
+            },
+        ],
+    },
+    {
+        id: 'prasily-2',
+        title: 'Apartmán Prášily 2',
+        location: 'Prášily',
+        shortDescription: 'Prostorný apartmán v srdci Šumavy pro 4 osoby.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro rodiny s dětmi.',
+        capacity: '4 osoby',
+        heroImage: '/images/prasily/prasily-ap2-kuchyn.jpeg',
+        features: [
+            { icon: '🏠', label: 'Celý apartmán' },
+            { icon: '🅿️', label: 'Parkování zdarma' },
+            { icon: '📶', label: 'Wi-Fi' },
+            { icon: '🍳', label: 'Plně vybavená kuchyň' },
+            { icon: '📺', label: 'TV' },
+            { icon: '🐕', label: 'Domácí mazlíčci povoleni' },
+            { icon: '⛷️', label: 'Blízko lyžařských areálů' },
+            { icon: '🌲', label: 'Krásná příroda' },
+        ],
+        pricing: [
+            {
+                season: 'Hlavní sezóna (léto, zima)',
+                pricePerNight: 'od 2 000 Kč',
+                minNights: 2,
+            },
+            {
+                season: 'Mimo sezónu',
+                pricePerNight: 'od 1 700 Kč',
+                minNights: 2,
+            },
+        ],
+        gallery: [
+            '/images/prasily/prasily-ap2-kuchyn.jpeg',
+            '/images/prasily/prasily-ap2-koupelna.jpeg',
+            '/images/prasily/prasily-ap2-botnik.jpeg',
+            '/images/prasily/prasily-budova.jpeg',
+            '/images/prasily/prasily-schodiste.jpeg',
+            '/images/prasily/prasily-dvere.jpeg',
         ],
         coordinates: {
             lat: 49.0733,
@@ -121,7 +188,7 @@ export const apartments: Apartment[] = [
         shortDescription: 'Prostorný apartmán v centru horského městečka s výbornou dostupností.',
         longDescription: 'Nově zrekonstruovaný apartmán v centru Železné Rudy nabízí komfortní ubytování s moderním vybavením. Nachází se v těsné blízkosti lyžařských areálů Špičák a Belveder. Apartmán disponuje dvěma ložnicemi, prostornou obývací částí s kuchyňským koutem a moderní koupelnou. Ideální výchozí bod pro turistiku i lyžování.',
         capacity: '4–6 osob',
-        heroImage: '/images/zelezna-ruda/hero.jpg',
+        heroImage: '/images/zelezna-ruda/ruda-cely-pokoj.jpeg',
         features: [
             { icon: '🏠', label: 'Celý apartmán' },
             { icon: '🅿️', label: 'Parkování zdarma' },
@@ -145,16 +212,16 @@ export const apartments: Apartment[] = [
             },
         ],
         gallery: [
-            '/images/zelezna-ruda/gallery/01.jpg',
-            '/images/zelezna-ruda/gallery/02.jpg',
-            '/images/zelezna-ruda/gallery/03.jpg',
-            '/images/zelezna-ruda/gallery/04.jpg',
-            '/images/zelezna-ruda/gallery/05.jpg',
-            '/images/zelezna-ruda/gallery/06.jpg',
-            '/images/zelezna-ruda/gallery/07.jpg',
-            '/images/zelezna-ruda/gallery/08.jpg',
-            '/images/zelezna-ruda/gallery/09.jpg',
-            '/images/zelezna-ruda/gallery/10.jpg',
+            '/images/zelezna-ruda/ruda-cely-pokoj.jpeg',
+            '/images/zelezna-ruda/ruda-kuchyn.jpeg',
+            '/images/zelezna-ruda/ruda-kuchyn-palanda.jpeg',
+            '/images/zelezna-ruda/ruda-postel.jpeg',
+            '/images/zelezna-ruda/ruda-koupelna.jpeg',
+            '/images/zelezna-ruda/ruda-predsin.jpeg',
+            '/images/zelezna-ruda/ruda-skrinky.jpeg',
+            '/images/zelezna-ruda/ruda-budova-reality.jpeg',
+            '/images/zelezna-ruda/ruda-altan.jpeg',
+            '/images/zelezna-ruda/ruda-zahrada.jpeg',
         ],
         coordinates: {
             lat: 49.1367,

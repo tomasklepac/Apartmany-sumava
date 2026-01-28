@@ -30,10 +30,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             title="Vyberte si svůj apartmán"
-            subtitle="Dva apartmány, jedna destinace. Každý s jedinečnou atmosférou."
+            subtitle="Tři apartmány, dvě destinace. Každý s jedinečnou atmosférou."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {apartments.map((apartment, index) => (
               <ApartmentCard key={apartment.id} apartment={apartment} index={index} />
             ))}

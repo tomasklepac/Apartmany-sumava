@@ -20,7 +20,8 @@ export default function Navbar() {
 
     const navLinks = [
         { href: '/', label: 'Domů' },
-        { href: '/apartman/prasily', label: 'Prášily' },
+        { href: '/apartman/prasily', label: 'Prášily 1' },
+        { href: '/apartman/prasily-2', label: 'Prášily 2' },
         { href: '/apartman/zelezna-ruda', label: 'Železná Ruda' },
         { href: '/galerie', label: 'Galerie' },
         { href: '/cenik', label: 'Ceník' },
@@ -34,8 +35,8 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-cream/95 backdrop-blur-md shadow-md'
-                    : 'bg-transparent'
+                ? 'bg-cream/95 backdrop-blur-md shadow-md'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,15 +62,6 @@ export default function Navbar() {
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-copper transition-all duration-300 group-hover:w-full" />
                             </Link>
                         ))}
-                        <Link
-                            href="/rezervace"
-                            className={`px-6 py-2 rounded-full font-medium transition-all ${isScrolled
-                                    ? 'bg-copper text-cream hover:bg-copper-light'
-                                    : 'bg-cream text-forest-dark hover:bg-cream-dark'
-                                }`}
-                        >
-                            Rezervovat
-                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -116,13 +108,6 @@ export default function Navbar() {
                                     {link.label}
                                 </Link>
                             ))}
-                            <Link
-                                href="/rezervace"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="bg-copper text-cream px-6 py-2 rounded-full font-medium hover:bg-copper-light transition-colors text-center"
-                            >
-                                Rezervovat
-                            </Link>
                         </div>
                     </motion.div>
                 )}
