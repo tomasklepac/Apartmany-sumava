@@ -133,7 +133,7 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                                     </div>
                                 ))}
                                 <div className="mt-4 p-4 bg-mist/50 rounded-lg text-sm text-charcoal/80 italic">
-                                    ℹ️ Cena je pouze orientační. Konečná částka se může lišit v závislosti na konkrétním termínu (sezóna/mimo sezónu) a počtu ubytovaných osob. Pro přesnou kalkulaci nás prosím kontaktujte.
+                                    ℹ️ Uvedená cena je minimální. Konečná cena se mění v závislosti na konkrétním termínu (sezóna/mimo sezónu) a počtu ubytovaných osob. Pro přesnou kalkulaci nás prosím kontaktujte.
                                 </div>
                             </div>
                         </div>
