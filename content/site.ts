@@ -19,8 +19,8 @@ export const siteData: SiteData = {
     tagline: 'Dva apartmány. Jedna Šumava.',
     description: 'Ubytování v srdci Šumavy - Prášily a Železná Ruda. Klid, příroda a komfort pro vaši dovolenou.',
     contact: {
-        phone: '+420123456789', // TODO: Nahradit skutečným telefonem
-        phoneDisplay: '+420 123 456 789',
+        phone: '+420777225546',
+        phoneDisplay: '+420 777 225 546',
         email: 'info@apartmany-sumava.cz', // TODO: Nahradit skutečným emailem
     },
     social: {
