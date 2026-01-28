@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: siteData.name,
     description: siteData.description,
   },
+  metadataBase: new URL('https://www.sumava-apartmany.cz'),
 };
 
 export default function RootLayout({

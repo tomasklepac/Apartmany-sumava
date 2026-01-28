@@ -31,6 +31,18 @@ export async function generateMetadata({ params }: ApartmentPageProps): Promise<
     return {
         title: apartment.title,
         description: apartment.shortDescription,
+        openGraph: {
+            title: apartment.title,
+            description: apartment.shortDescription,
+            images: [
+                {
+                    url: apartment.heroImage,
+                    width: 1200,
+                    height: 630,
+                    alt: apartment.title,
+                },
+            ],
+        },
     };
 }
 

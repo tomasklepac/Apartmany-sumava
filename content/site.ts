@@ -21,7 +21,7 @@ export const siteData: SiteData = {
     contact: {
         phone: '+420777225546',
         phoneDisplay: '+420 777 225 546',
-        email: 'info@apartmany-sumava.cz', // TODO: Nahradit skutečným emailem
+        email: 'info@sumava-apartmany.cz',
     },
     social: {
         // facebook: 'https://facebook.com/...',
