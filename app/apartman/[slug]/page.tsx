@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
-import { apartments, getApartmentById } from '@/content/apartments';
-import Hero from '@/components/Hero';
+import { getApartmentById, apartments } from '@/content/apartments';
+import Navbar from '@/components/Navbar';
 import ApartmentMap from '@/components/ApartmentMap';
+import ImageGallery from '@/components/ImageGallery';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -99,18 +100,7 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                         {/* Gallery */}
                         <div>
                             <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Galerie</h2>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                {apartment.gallery.map((image, index) => (
-                                    <div key={index} className="relative h-64 rounded-lg overflow-hidden group">
-                                        <Image
-                                            src={image}
-                                            alt={`${apartment.title} - ${index + 1}`}
-                                            fill
-                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
+                            <ImageGallery images={apartment.gallery} title={apartment.title} />
                         </div>
 
                         {/* Pricing */}
