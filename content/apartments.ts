@@ -119,7 +119,7 @@ export const apartments: Apartment[] = [
         shortDescription: 'Prostorný apartmán v srdci Šumavy pro 4 osoby.',
         longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti lyžařských areálů a turistických tras. Apartmán je vybaven plně vybavenou kuchyní, prostornou obývací částí a pohodlnou ložnicí. Ideální pro rodiny s dětmi.',
         capacity: '4 osoby',
-        heroImage: '/images/prasily/prasily-ap2-kuchyn.jpeg',
+        heroImage: '/images/prasily/prasily-ap2-cley-pokoj.webp',
         features: [
             { icon: '🏠', label: 'Celý apartmán' },
             { icon: '🅿️', label: 'Parkování zdarma' },
@@ -187,7 +187,7 @@ export const apartments: Apartment[] = [
         location: 'Železná Ruda',
         shortDescription: 'Prostorný apartmán v centru horského městečka s výbornou dostupností.',
         longDescription: 'Nově zrekonstruovaný apartmán v centru Železné Rudy nabízí komfortní ubytování s moderním vybavením. Nachází se v těsné blízkosti lyžařských areálů Špičák a Belveder. Apartmán disponuje dvěma ložnicemi, prostornou obývací částí s kuchyňským koutem a moderní koupelnou. Ideální výchozí bod pro turistiku i lyžování.',
-        capacity: '4–6 osob',
+        capacity: '4 osoby',
         heroImage: '/images/zelezna-ruda/ruda-cely-pokoj.jpeg',
         features: [
             { icon: '🏠', label: 'Celý apartmán' },
