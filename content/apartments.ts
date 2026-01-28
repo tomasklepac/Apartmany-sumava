@@ -32,7 +32,7 @@ export interface Apartment {
 export const apartments: Apartment[] = [
     {
         id: 'prasily',
-        title: 'Apartmán Prášily 1',
+        title: 'Apartmán Prášily (3 os.)',
         location: 'Prášily',
         address: 'Prášily 172, 342 01 Prášily',
         shortDescription: 'Útulný apartmán v srdci Šumavy pro 3 osoby.',
@@ -76,7 +76,7 @@ export const apartments: Apartment[] = [
     },
     {
         id: 'prasily-2',
-        title: 'Apartmán Prášily 2',
+        title: 'Apartmán Prášily (4 os.)',
         location: 'Prášily',
         address: 'Prášily 172, 342 01 Prášily',
         shortDescription: 'Prostorný apartmán v srdci Šumavy pro 4 osoby.',

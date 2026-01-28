@@ -23,8 +23,8 @@ export default function Navbar() {
 
     const navLinks = [
         { href: '/', label: 'Domů' },
-        { href: '/apartman/prasily', label: 'Prášily 1' },
-        { href: '/apartman/prasily-2', label: 'Prášily 2' },
+        { href: '/apartman/prasily', label: 'Prášily (3 os.)' },
+        { href: '/apartman/prasily-2', label: 'Prášily (4 os.)' },
         { href: '/apartman/zelezna-ruda', label: 'Železná Ruda' },
         { href: '/galerie', label: 'Galerie' },
         { href: '/cenik', label: 'Ceník' },

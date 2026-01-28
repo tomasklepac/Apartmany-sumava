@@ -5,8 +5,8 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const apartmentLinks = [
-        { href: '/apartman/prasily', label: 'Prášily 1' },
-        { href: '/apartman/prasily-2', label: 'Prášily 2' },
+        { href: '/apartman/prasily', label: 'Prášily (3 os.)' },
+        { href: '/apartman/prasily-2', label: 'Prášily (4 os.)' },
         { href: '/apartman/zelezna-ruda', label: 'Železná Ruda' },
     ];
 
