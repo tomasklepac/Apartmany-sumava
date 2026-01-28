@@ -46,34 +46,7 @@ export default function KontaktPage() {
                             </div>
                         </div>
 
-                        {/* FAQ */}
-                        <div className="bg-mist p-8 rounded-xl">
-                            <h3 className="text-2xl font-serif font-bold text-charcoal mb-6">
-                                Často kladené otázky
-                            </h3>
 
-                            <div className="space-y-4">
-                                <div>
-                                    <h4 className="font-semibold text-charcoal mb-2">Kdy je check-in a check-out?</h4>
-                                    <p className="text-charcoal/70">Check-in je od 14:00 do 18:00, check-out do 10:00. Pozdní check-in je možný po domluvě.</p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold text-charcoal mb-2">Jsou povoleni domácí mazlíčci?</h4>
-                                    <p className="text-charcoal/70">V apartmánu Prášily jsou domácí mazlíčci povoleni. Pro Železnou Rudu nás prosím kontaktujte.</p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold text-charcoal mb-2">Jaké jsou storno podmínky?</h4>
-                                    <p className="text-charcoal/70">Storno podmínky závisí na termínu a délce pobytu. Kontaktujte nás pro detaily.</p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold text-charcoal mb-2">Je k dispozici parkování?</h4>
-                                    <p className="text-charcoal/70">Ano, u obou apartmánů je parkování zdarma.</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     {/* CTA Box */}
