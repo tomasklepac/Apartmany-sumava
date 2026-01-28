@@ -16,15 +16,23 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
     const openLightbox = (index: number) => {
         setCurrentIndex(index);
         setLightboxOpen(true);
-        // Prevent body scroll
-        document.body.style.overflow = 'hidden';
     };
 
     const closeLightbox = useCallback(() => {
         setLightboxOpen(false);
-        // Restore body scroll
-        document.body.style.overflow = 'unset';
     }, []);
+
+    // Handle body scroll lock
+    useEffect(() => {
+        if (lightboxOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [lightboxOpen]);
 
     const nextImage = useCallback((e?: React.MouseEvent) => {
         e?.stopPropagation();

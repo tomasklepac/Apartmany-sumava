@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -15,6 +15,16 @@ export default function Lightbox({ images, currentIndex, onClose, onNavigate }: 
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
+    const handlePrevious = useCallback(() => {
+        const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+        onNavigate(newIndex);
+    }, [currentIndex, images.length, onNavigate]);
+
+    const handleNext = useCallback(() => {
+        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+        onNavigate(newIndex);
+    }, [currentIndex, images.length, onNavigate]);
+
     // Keyboard navigation
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
@@ -25,7 +35,7 @@ export default function Lightbox({ images, currentIndex, onClose, onNavigate }: 
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [currentIndex]);
+    }, [onClose, handlePrevious, handleNext]);
 
     // Prevent body scroll when lightbox is open
     useEffect(() => {
@@ -34,16 +44,6 @@ export default function Lightbox({ images, currentIndex, onClose, onNavigate }: 
             document.body.style.overflow = 'unset';
         };
     }, []);
-
-    const handlePrevious = () => {
-        const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-        onNavigate(newIndex);
-    };
-
-    const handleNext = () => {
-        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-        onNavigate(newIndex);
-    };
 
     // Touch handlers for swipe
     const handleTouchStart = (e: React.TouchEvent) => {
