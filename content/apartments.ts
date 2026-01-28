@@ -53,7 +53,7 @@ export const apartments: Apartment[] = [
             { icon: '🏠', label: 'Celý apartmán' },
             { icon: '🅿️', label: 'Parkování zdarma' },
             { icon: '📶', label: 'Wi-Fi' },
-            { icon: '🍳', label: 'Plně vybavená kuchyň' },
+            { icon: '🍳', label: 'Kuchyňský kout' },
             { icon: '📺', label: 'TV' },
             { icon: '🐕', label: 'Domácí mazlíčci povoleni' },
             { icon: '⛷️', label: 'Blízko lyžařských areálů' },
