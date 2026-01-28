@@ -42,6 +42,7 @@ export default function HomePage() {
           label: 'Kontakt',
           href: '/kontakt',
         }}
+        showScrollIndicator={false}
       />
 
       {/* Výběr apartmánu */}
