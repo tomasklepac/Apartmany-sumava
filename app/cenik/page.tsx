@@ -16,30 +16,34 @@ export default function CenikPage() {
                     subtitle="Přehled cen ubytování v našich apartmánech"
                 />
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {apartments.map((apartment) => (
-                        <div key={apartment.id} className="bg-cream-dark rounded-2xl overflow-hidden shadow-lg">
+                        <div key={apartment.id} className="bg-cream-dark rounded-2xl overflow-hidden shadow-lg flex flex-col">
                             <div className="bg-forest-dark text-cream p-6">
-                                <h2 className="text-3xl font-serif font-bold mb-2">{apartment.title}</h2>
-                                <p className="text-cream/80">{apartment.location}</p>
+                                <h2 className="text-xl font-serif font-bold mb-1">{apartment.title}</h2>
+                                <p className="text-cream/80 text-sm">{apartment.location}</p>
                             </div>
 
-                            <div className="p-8 space-y-6">
+                            <div className="p-6 space-y-4 flex-grow">
                                 {apartment.pricing.map((price, index) => (
-                                    <div key={index} className="pb-6 border-b border-charcoal/10 last:border-0">
-                                        <div className="flex justify-between items-start mb-3">
+                                    <div key={index} className="pb-4 border-b border-charcoal/10 last:border-0">
+                                        <div className="flex justify-between items-center mb-2">
                                             <div>
-                                                <h3 className="text-xl font-semibold text-charcoal">{price.season}</h3>
+                                                <h3 className="text-lg font-semibold text-charcoal">{price.season}</h3>
                                                 {price.minNights && (
-                                                    <p className="text-charcoal/60 text-sm mt-1">
+                                                    <p className="text-charcoal/60 text-xs mt-1">
                                                         Minimálně {price.minNights} noci
                                                     </p>
                                                 )}
                                             </div>
-                                            <div className="text-3xl font-bold text-copper">{price.pricePerNight}</div>
+                                            <div className="text-xl font-bold text-copper">{price.pricePerNight}</div>
                                         </div>
                                     </div>
                                 ))}
+
+                                <div className="p-3 bg-mist/50 rounded-lg text-xs text-charcoal/80 italic">
+                                    ℹ️ Konečná cena se mění v závislosti na konkrétním termínu a počtu osob.
+                                </div>
 
                                 <div className="pt-4">
                                     <p className="text-charcoal/70 text-sm mb-4">

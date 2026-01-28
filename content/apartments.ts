@@ -127,13 +127,8 @@ export const apartments: Apartment[] = [
         ],
         pricing: [
             {
-                season: 'Hlavní sezóna (léto, zima)',
-                pricePerNight: 'od 2 200 Kč',
-                minNights: 2,
-            },
-            {
-                season: 'Mimo sezónu',
-                pricePerNight: 'od 1 800 Kč',
+                season: 'Cena za noc',
+                pricePerNight: 'od 1 500 Kč',
                 minNights: 2,
             },
         ],
