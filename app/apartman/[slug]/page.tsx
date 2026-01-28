@@ -149,7 +149,7 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                                     href="/okoli"
                                     className="inline-block px-8 py-3 bg-forest-dark text-cream rounded-full font-medium hover:bg-forest transition-all hover:scale-105"
                                 >
-                                    🏞️ Objevte okolí
+                                    Objevte okolí
                                 </Link>
                             </div>
                         </div>
