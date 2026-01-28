@@ -75,7 +75,7 @@ export default function HomePage() {
                 className="bg-cream p-8 rounded-xl text-center hover:shadow-lg transition-shadow"
               >
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-3">
+                <h3 className="text-xl font-bold text-charcoal mb-3">
                   {item.title}
                 </h3>
                 <p className="text-charcoal/70">{item.description}</p>

@@ -26,7 +26,7 @@ export default function CenikPage() {
                     {apartments.map((apartment) => (
                         <div key={apartment.id} className="bg-cream-dark rounded-2xl overflow-hidden shadow-lg flex flex-col">
                             <div className="bg-forest-dark text-cream p-6">
-                                <h2 className="text-xl font-serif font-bold mb-1">{apartment.title}</h2>
+                                <h2 className="text-xl font-bold mb-1">{apartment.title}</h2>
                                 <p className="text-cream/80 text-sm">{apartment.location}</p>
                             </div>
 

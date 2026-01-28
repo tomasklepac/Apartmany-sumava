@@ -37,7 +37,7 @@ export default function ApartmentCard({ apartment, index = 0 }: ApartmentCardPro
 
             {/* Content */}
             <div className="p-8">
-                <h3 className="text-3xl font-serif font-bold text-charcoal mb-3">
+                <h3 className="text-3xl font-bold text-charcoal mb-3">
                     {apartment.title}
                 </h3>
 

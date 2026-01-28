@@ -79,7 +79,7 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                     <div className="lg:col-span-2 space-y-12">
                         {/* Description */}
                         <div>
-                            <h2 className="text-3xl font-serif font-bold text-charcoal mb-4">O apartmánu</h2>
+                            <h2 className="text-3xl font-bold text-charcoal mb-4">O apartmánu</h2>
                             <p className="text-charcoal/80 text-lg leading-relaxed">{apartment.longDescription}</p>
                         </div>
 

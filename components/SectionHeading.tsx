@@ -17,7 +17,7 @@ export default function SectionHeading({ title, subtitle, centered = true }: Sec
             transition={{ duration: 0.6 }}
             className={`mb-12 ${centered ? 'text-center' : ''}`}
         >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 {title}
             </h2>
             {subtitle && (

@@ -31,7 +31,7 @@ export default function RezervacePage() {
                                 />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-2xl font-serif font-bold text-charcoal mb-2">
+                                <h3 className="text-2xl font-bold text-charcoal mb-2">
                                     {apartment.title}
                                 </h3>
                                 <p className="text-charcoal/70 mb-4">{apartment.shortDescription}</p>

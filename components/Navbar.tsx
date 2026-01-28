@@ -43,7 +43,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2">
-                        <span className="text-2xl font-serif font-bold transition-colors text-forest-dark">
+                        <span className="text-2xl font-bold transition-colors text-forest-dark">
                             {siteData.name}
                         </span>
                     </Link>
