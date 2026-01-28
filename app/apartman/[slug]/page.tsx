@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getApartmentById, apartments } from '@/content/apartments';
 import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
 import ApartmentMap from '@/components/ApartmentMap';
 import ImageGallery from '@/components/ImageGallery';
 import Image from 'next/image';
