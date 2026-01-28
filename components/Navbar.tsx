@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { siteData } from '@/content/site';
@@ -8,6 +9,8 @@ import { siteData } from '@/content/site';
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const isHomepage = pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,7 +35,7 @@ export default function Navbar() {
     return (
         <motion.nav
             initial={{ y: -100 }}
-            animate={{ y: 0 }}
+            animate={{ y: isHomepage && !isScrolled ? -100 : 0 }}
             transition={{ duration: 0.5 }}
             className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream/95 backdrop-blur-md shadow-md"
         >
