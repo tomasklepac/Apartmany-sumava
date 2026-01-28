@@ -36,11 +36,7 @@ export default function CenikPage() {
                                         <div className="flex justify-between items-center mb-2">
                                             <div>
                                                 <h3 className="text-lg font-semibold text-charcoal">{price.season}</h3>
-                                                {price.minNights && (
-                                                    <p className="text-charcoal/60 text-xs mt-1">
-                                                        Minimálně {price.minNights} noci
-                                                    </p>
-                                                )}
+
                                             </div>
                                             <div className="text-xl font-bold text-copper">{price.pricePerNight}</div>
                                         </div>

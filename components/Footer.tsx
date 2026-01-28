@@ -73,7 +73,7 @@ export default function Footer() {
                                     href={`tel:${siteData.contact.phone}`}
                                     className="text-cream/80 hover:text-copper transition-colors flex items-center space-x-2 text-sm"
                                 >
-                                    <span>📞</span>
+                                    <span>Telefon:</span>
                                     <span>{siteData.contact.phoneDisplay}</span>
                                 </a>
                             </li>
@@ -82,7 +82,7 @@ export default function Footer() {
                                     href={`mailto:${siteData.contact.email}`}
                                     className="text-cream/80 hover:text-copper transition-colors flex items-center space-x-2 text-sm"
                                 >
-                                    <span>✉️</span>
+                                    <span>Email:</span>
                                     <span>{siteData.contact.email}</span>
                                 </a>
                             </li>

@@ -122,11 +122,7 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                                         <div className="flex justify-between items-center">
                                             <div>
                                                 <h3 className="text-xl font-semibold text-charcoal">{price.season}</h3>
-                                                {price.minNights && (
-                                                    <p className="text-charcoal/60 text-sm mt-1">
-                                                        Minimálně {price.minNights} noci
-                                                    </p>
-                                                )}
+
                                             </div>
                                             <div className="text-2xl font-bold text-copper">{price.pricePerNight}</div>
                                         </div>
@@ -173,13 +169,13 @@ export default async function ApartmentPage({ params }: ApartmentPageProps) {
                                         href="tel:+420123456789"
                                         className="block w-full text-center px-6 py-3 bg-copper text-cream rounded-full font-medium hover:bg-copper-light transition-all"
                                     >
-                                        📞 Zavolat
+                                        Zavolat
                                     </a>
                                     <Link
                                         href="/kontakt"
                                         className="block w-full text-center px-6 py-3 bg-cream/10 border-2 border-cream text-cream rounded-full font-medium hover:bg-cream/20 transition-all"
                                     >
-                                        ✉️ Napsat
+                                        Napsat
                                     </Link>
                                 </div>
                             </div>

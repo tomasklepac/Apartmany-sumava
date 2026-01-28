@@ -51,7 +51,7 @@ export const apartments: Apartment[] = [
             {
                 season: 'Cena za noc',
                 pricePerNight: 'od 1 200 Kč',
-                minNights: 2,
+
             },
         ],
         gallery: [
@@ -90,7 +90,7 @@ export const apartments: Apartment[] = [
             {
                 season: 'Cena za noc',
                 pricePerNight: 'od 1 200 Kč',
-                minNights: 2,
+
             },
         ],
         gallery: [
@@ -129,7 +129,6 @@ export const apartments: Apartment[] = [
             {
                 season: 'Cena za noc',
                 pricePerNight: 'od 1 500 Kč',
-                minNights: 2,
             },
         ],
         gallery: [

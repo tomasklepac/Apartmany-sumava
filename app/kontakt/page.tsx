@@ -26,7 +26,7 @@ export default function KontaktPage() {
                             <div className="space-y-6">
                                 <div>
                                     <div className="flex items-center space-x-3 mb-2">
-                                        <span className="text-3xl">📞</span>
+                                        <span className="text-3xl text-copper font-serif font-bold">Telefon</span>
                                         <h4 className="text-lg font-semibold text-charcoal">Telefon</h4>
                                     </div>
                                     <a
@@ -39,7 +39,7 @@ export default function KontaktPage() {
 
                                 <div>
                                     <div className="flex items-center space-x-3 mb-2">
-                                        <span className="text-3xl">✉️</span>
+                                        <span className="text-3xl text-copper font-serif font-bold">Email</span>
                                         <h4 className="text-lg font-semibold text-charcoal">Email</h4>
                                     </div>
                                     <a
@@ -95,13 +95,13 @@ export default function KontaktPage() {
                                     href={`tel:${siteData.contact.phone}`}
                                     className="block w-full text-center px-6 py-4 bg-copper text-cream rounded-full font-medium hover:bg-copper-light transition-all text-lg"
                                 >
-                                    📞 Zavolat
+                                    Zavolat
                                 </a>
                                 <a
                                     href={`mailto:${siteData.contact.email}`}
                                     className="block w-full text-center px-6 py-4 bg-cream/10 border-2 border-cream text-cream rounded-full font-medium hover:bg-cream/20 transition-all text-lg"
                                 >
-                                    ✉️ Napsat email
+                                    Napsat email
                                 </a>
                             </div>
 

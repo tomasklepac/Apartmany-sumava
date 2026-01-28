@@ -76,8 +76,7 @@ export default function RezervacePage() {
                                 href={`tel:${siteData.contact.phone}`}
                                 className="flex flex-col items-center p-6 bg-cream/10 backdrop-blur-sm rounded-xl hover:bg-cream/20 transition-all group"
                             >
-                                <span className="text-5xl mb-3">📞</span>
-                                <h4 className="text-xl font-semibold mb-2">Zavolejte nám</h4>
+                                <h4 className="text-xl font-semibold mb-2 mt-2">Zavolejte nám</h4>
                                 <p className="text-copper text-lg font-medium group-hover:text-copper-light">
                                     {siteData.contact.phoneDisplay}
                                 </p>
@@ -87,8 +86,7 @@ export default function RezervacePage() {
                                 href={`mailto:${siteData.contact.email}`}
                                 className="flex flex-col items-center p-6 bg-cream/10 backdrop-blur-sm rounded-xl hover:bg-cream/20 transition-all group"
                             >
-                                <span className="text-5xl mb-3">✉️</span>
-                                <h4 className="text-xl font-semibold mb-2">Napište nám</h4>
+                                <h4 className="text-xl font-semibold mb-2 mt-2">Napište nám</h4>
                                 <p className="text-copper text-lg font-medium group-hover:text-copper-light">
                                     {siteData.contact.email}
                                 </p>
