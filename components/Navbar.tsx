@@ -54,7 +54,7 @@ export default function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-sm font-medium transition-colors relative group text-forest-dark hover:text-copper"
+                                className="text-base font-bold transition-colors relative group text-forest-dark hover:text-copper"
                             >
                                 {link.label}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-copper transition-all duration-300 group-hover:w-full" />
@@ -100,7 +100,7 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-forest-dark hover:text-copper font-medium transition-colors"
+                                    className="text-forest-dark hover:text-copper text-base font-bold transition-colors"
                                 >
                                     {link.label}
                                 </Link>
