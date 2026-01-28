@@ -1,12 +1,7 @@
-import dynamic from 'next/dynamic';
 import { siteData } from '@/content/site';
 import { apartments } from '@/content/apartments';
 import SectionHeading from '@/components/SectionHeading';
-
-const ContactMap = dynamic(() => import('@/components/ContactMap'), {
-    ssr: false,
-    loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse rounded-xl" />
-});
+import MapLoader from '@/components/MapLoader';
 
 export const metadata = {
     title: 'Kontakt',
@@ -72,7 +67,7 @@ export default function KontaktPage() {
 
                     {/* Pravý sloupec: Mapa */}
                     <div className="h-full min-h-[500px]">
-                        <ContactMap locations={locations} />
+                        <MapLoader locations={locations} />
                     </div>
                 </div>
             </div>
