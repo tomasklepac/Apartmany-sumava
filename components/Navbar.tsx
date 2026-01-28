@@ -55,7 +55,7 @@ export default function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`text-sm font-medium transition-colors relative group ${isScrolled ? 'text-charcoal hover:text-copper' : 'text-cream hover:text-copper-light'
+                                className={`text-sm font-medium transition-colors relative group ${isScrolled ? 'text-forest-dark hover:text-copper' : 'text-cream hover:text-copper-light'
                                     }`}
                             >
                                 {link.label}
@@ -103,7 +103,7 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-charcoal hover:text-copper font-medium transition-colors"
+                                    className="text-forest-dark hover:text-copper font-medium transition-colors"
                                 >
                                     {link.label}
                                 </Link>
