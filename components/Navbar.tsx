@@ -34,17 +34,13 @@ export default function Navbar() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-cream/95 backdrop-blur-md shadow-md'
-                : 'bg-charcoal/40 backdrop-blur-md'
-                }`}
+            className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream/95 backdrop-blur-md shadow-md"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2">
-                        <span className={`text-2xl font-serif font-bold transition-colors ${isScrolled ? 'text-forest-dark' : 'text-cream'
-                            }`}>
+                        <span className="text-2xl font-serif font-bold transition-colors text-forest-dark">
                             {siteData.name}
                         </span>
                     </Link>
@@ -55,8 +51,7 @@ export default function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`text-sm font-medium transition-colors relative group ${isScrolled ? 'text-forest-dark hover:text-copper' : 'text-cream hover:text-copper-light'
-                                    }`}
+                                className="text-sm font-medium transition-colors relative group text-forest-dark hover:text-copper"
                             >
                                 {link.label}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-copper transition-all duration-300 group-hover:w-full" />
@@ -67,8 +62,7 @@ export default function Navbar() {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-charcoal' : 'text-cream'
-                            }`}
+                        className="lg:hidden p-2 rounded-md transition-colors text-forest-dark"
                         aria-label="Toggle menu"
                     >
                         <svg
