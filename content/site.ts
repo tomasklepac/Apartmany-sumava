@@ -40,7 +40,7 @@ export const whyUs: WhyUsItem[] = [
     {
         icon: '🌲',
         title: 'Příroda na dosah',
-        description: 'Oba apartmány se nacházejí v srdci Šumavy s přímým přístupem k turistickým trasám a přírodním krásám.',
+        description: 'Všechny apartmány se nacházejí v srdci Šumavy s přímým přístupem k turistickým trasám a přírodním krásám.',
     },
     {
         icon: '✨',
