@@ -34,7 +34,7 @@ export default function Navbar() {
         { href: '/', label: 'Domů' },
         { href: '/apartman/prasily', label: 'Prášily (3 os.)' },
         { href: '/apartman/prasily-2', label: 'Prášily (4 os.)' },
-        { href: '/apartman/zelezna-ruda', label: 'Železná Ruda' },
+        { href: '/apartman/zelezna-ruda', label: 'Železná Ruda (4 os.)' },
         { href: '/galerie', label: 'Galerie' },
         { href: '/cenik', label: 'Ceník' },
         { href: '/okoli', label: 'Okolí' },

@@ -35,8 +35,8 @@ export const apartments: Apartment[] = [
         title: 'Apartmán Prášily (3 os.)',
         location: 'Prášily',
         address: 'Prášily 172, 342 01 Prášily',
-        shortDescription: 'Útulný apartmán v srdci Šumavy pro 3 osoby.',
-        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. Ideální pro páry nebo malou rodinu.',
+        shortDescription: 'Útulný apartmán s terasou v srdci Šumavy pro 3 osoby.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, obývací částí a pohodlnými postelemi. Ideální pro páry nebo malou rodinu. K dispozici je vlastní uzamykatelný sklep.',
         capacity: '3 osoby',
         heroImage: '/images/prasily/prasily-ap-postel.jpeg',
         features: [
@@ -46,6 +46,7 @@ export const apartments: Apartment[] = [
             { icon: '🍳', label: 'Kuchyňský kout' },
             { icon: '📺', label: 'TV' },
             { icon: '☀️', label: 'Terasa' },
+            { icon: '🔒', label: 'Vlastní sklep' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
@@ -56,6 +57,7 @@ export const apartments: Apartment[] = [
             },
         ],
         gallery: [
+            '/images/prasily/prasily-vchod.jpeg',
             '/images/prasily/prasily-ap-postel.jpeg',
             '/images/prasily/prasily-ap-kuchyn.jpeg',
             '/images/prasily/prasily-ap-tv.jpeg',
@@ -79,7 +81,7 @@ export const apartments: Apartment[] = [
         location: 'Prášily',
         address: 'Prášily 172, 342 01 Prášily',
         shortDescription: 'Útulný apartmán s balkonem v srdci Šumavy pro 4 osoby.',
-        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, prostornou obývací částí a pohodlnou ložnicí. K apartmánu náleží vlastní balkon.',
+        longDescription: 'Moderně zařízený apartmán v klidné části Prášil nabízí perfektní zázemí pro dovolenou v přírodě. Nachází se v blízkosti turistických tras s krásnou přírodou. Apartmán je vybaven kuchyňským koutem, obývací částí a pohodlnými postelemi. K apartmánu náleží vlastní balkon a uzamykatelný sklep.',
         capacity: '4 osoby',
         heroImage: '/images/prasily/prasily-ap2-cely-pokoj.jpeg',
         features: [
@@ -88,6 +90,7 @@ export const apartments: Apartment[] = [
             { icon: '🅿️', label: 'Parkování zdarma' },
             { icon: '📶', label: 'Wi-Fi' },
             { icon: '🍳', label: 'Kuchyňský kout' },
+            { icon: '🔒', label: 'Vlastní sklep' },
             { icon: '🌲', label: 'Krásná příroda' },
         ],
         pricing: [
@@ -98,6 +101,7 @@ export const apartments: Apartment[] = [
             },
         ],
         gallery: [
+            '/images/prasily/prasily-vchod.jpeg',
             '/images/prasily/prasily-ap2-cely-pokoj.jpeg',
             '/images/prasily/prasily-ap2-cely-pokoj-2.jpeg',
             '/images/prasily/prasily-ap2-kuchyn.jpeg',
@@ -116,13 +120,13 @@ export const apartments: Apartment[] = [
     },
     {
         id: 'zelezna-ruda',
-        title: 'Apartmán Železná Ruda',
+        title: 'Apartmán Železná Ruda (4 os.)',
         location: 'Železná Ruda',
         address: 'Javorská 1, 340 04 Železná Ruda',
-        shortDescription: 'Prostorný apartmán v centru horského městečka s výbornou dostupností.',
-        longDescription: 'Nově zrekonstruovaný apartmán v centru Železné Rudy nabízí komfortní ubytování s moderním vybavením. Nachází se v těsné blízkosti lyžařských areálů Špičák a Belveder. Apartmán disponuje dvěma ložnicemi, prostornou obývací částí s kuchyňským koutem a moderní koupelnou. Ideální výchozí bod pro turistiku i lyžování.',
+        shortDescription: 'Prostorný apartmán s balkonem v centru horského městečka s výbornou dostupností.',
+        longDescription: 'Nově zrekonstruovaný apartmán v centru Železné Rudy nabízí komfortní ubytování s moderním vybavením. Nachází se pouhých 100 m od lyžařského areálu. Apartmán disponuje jednou ložnicí, prostornou obývací částí s kuchyňským koutem a moderní koupelnou. Ideální výchozí bod pro turistiku i lyžování. K apartmánu náleží vlastní balkon a uzamykatelný sklep.',
         capacity: '4 osoby',
-        heroImage: '/images/zelezna-ruda/ruda-cely-pokoj.jpeg',
+        heroImage: '/images/zelezna-ruda/ruda-cely-pokoj-hlavni.jpeg',
         features: [
             { icon: '🏠', label: 'Celý apartmán' },
             { icon: '🅿️', label: 'Parkování zdarma' },
@@ -131,6 +135,7 @@ export const apartments: Apartment[] = [
             { icon: '📺', label: 'Smart TV' },
             { icon: '🛁', label: 'Moderní koupelna' },
             { icon: '🏔️', label: 'Výhled na hory' },
+            { icon: '🏞️', label: 'Balkon' },
             { icon: '🎿', label: 'Ski room' },
         ],
         pricing: [
@@ -150,6 +155,12 @@ export const apartments: Apartment[] = [
             '/images/zelezna-ruda/ruda-predsin.jpeg',
             '/images/zelezna-ruda/ruda-skrinky.jpeg',
             '/images/zelezna-ruda/ruda-budova-reality.jpeg',
+            '/images/zelezna-ruda/ruda-fen.jpeg',
+            '/images/zelezna-ruda/ruda-kaple.jpeg',
+            '/images/zelezna-ruda/ruda-kavovar.jpeg',
+            '/images/zelezna-ruda/ruda-trezor.jpeg',
+            '/images/zelezna-ruda/ruda-trezory-na-klice.jpeg',
+            '/images/zelezna-ruda/ruda-vanocni-stromecek.jpeg',
             '/images/zelezna-ruda/ruda-altan.jpeg',
         ],
 

@@ -33,8 +33,8 @@ export default function ApartmentCard({ apartment, index = 0 }: ApartmentCardPro
             </div>
 
             {/* Content */}
-            <div className="p-8">
-                <h3 className="text-2xl font-bold text-charcoal mb-3 text-balance">
+            <div className="p-6">
+                <h3 className="text-xl font-bold text-charcoal mb-3 text-balance">
                     {apartment.title}
                 </h3>
 

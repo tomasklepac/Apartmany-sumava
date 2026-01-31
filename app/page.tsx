@@ -58,6 +58,10 @@ export default function HomePage() {
               <ApartmentCard key={apartment.id} apartment={apartment} index={index} />
             ))}
           </div>
+
+          <div className="mt-8 text-center text-charcoal/70">
+            <p>🐾 Domácí mazlíčci jsou vítáni ve všech apartmánech za poplatek.</p>
+          </div>
         </div>
       </section>
 
@@ -96,8 +100,11 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
             {(() => {
-              const previewImages = apartments.flatMap(apt => apt.gallery.slice(0, 3)).slice(0, 6);
-              const allImages = apartments.flatMap(apt => apt.gallery);
+              const allImages = Array.from(new Set(apartments.flatMap(apt => apt.gallery)));
+              // For preview, we want a diverse selection.
+              // Take the first 3 images from each apartment, then filter for uniqueness, then take 6.
+              const previewCandidates = apartments.flatMap(apt => apt.gallery.slice(0, 3));
+              const previewImages = Array.from(new Set(previewCandidates)).slice(0, 6);
 
               return previewImages.map((image, index) => (
                 <div

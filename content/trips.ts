@@ -100,6 +100,17 @@ export const trips: Trip[] = [
         season: 'Celoročně',
         coordinates: { lat: 49.1500, lng: 13.3333 },
     },
+    {
+        id: 'prirodni-koupaliste-zabak',
+        title: 'Přírodní koupaliště Žabák',
+        description: 'Přírodní koupaliště a biotop s čistou, osvěžující vodou se nachází v krásném prostředí Šumavy, přibližně 2 km od centra Železné Rudy.',
+        category: 'nature',
+        image: '/images/trips/koupaliste-zabak.jpeg',
+        distance: '2 km od Železné Rudy',
+        difficulty: 'easy',
+        season: 'Léto',
+        coordinates: { lat: 49.1530, lng: 13.2350 },
+    },
 ];
 
 export const getTripsByCategory = (category: Trip['category']): Trip[] => {
